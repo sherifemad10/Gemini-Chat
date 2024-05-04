@@ -1,0 +1,185 @@
+.sidebar {
+  background-color: #151931;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.menuIcon {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
+.menuIcon .menu {
+  font-size: 35px;
+}
+
+/* >>>>>> New Chat <<<<<<< */
+
+.newChat {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #41434c;
+  border-radius: 30px;
+  width: fit-content;
+  color: #000;
+  font-weight: 900;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.newChat .new {
+  font-size: 25px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.newChat .addNew span {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+  opacity: 0.7;
+}
+
+.neChat {
+  margin: 10px 0 20px 30px;
+  background: #ffffff6e;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  display: none;
+}
+
+.newChat:hover ~ .neChat {
+  display: block;
+  position: absolute;
+}
+
+/* >>>>>>>> recentChat <<<<<<< */
+
+.recentChat {
+  margin-top: 40px;
+}
+
+.recentChat h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #a096a5;
+}
+
+.recentEntry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  animation: fadein 1.5s;
+}
+
+.recent {
+  font-size: 20px;
+}
+
+.recentEntry span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.recentEntry:hover {
+  background: #ffffff4f;
+  border-radius: 10px;
+}
+
+/* >>>>>> bottomSidebar <<<<<<< */
+
+.bottomSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+.help {
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.help:hover {
+  background: #ffffff4f;
+  border-radius: 30px;
+}
+
+.helpIcon {
+  font-size: 25px;
+}
+
+.activityIcon {
+  font-size: 20px;
+}
+
+.upgrade {
+  display: flex;
+  align-items: center;
+  background: #ffffff4f;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.upgrade img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* >>>>>> light and dark theme */
+
+.toggel {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.toggel .light {
+  color: gold;
+  font-size: 35px;
+  margin-right: 10px;
+  display: none;
+}
+
+.toggel .darks {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.lights {
+  font-size: 17px;
+  display: none;
+}
+
+.darkss {
+  font-size: 17px;
+}
+
+/* >>>>>> responsive <<<<<<<<<< */
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+}
